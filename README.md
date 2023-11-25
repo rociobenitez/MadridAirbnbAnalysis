@@ -1,39 +1,55 @@
-Análisis de Datos de Airbnb
-===========================
+Análisis de Datos de Airbnb en Madrid
+=====================================
 
-Este proyecto analiza un conjunto de datos de Airbnb. Se ha utilizado el lenguaje de programación R y se han realizado diversos análisis y visualizaciones utilizando un archivo Quarto (`.qmd`).
+Este proyecto analiza un conjunto de datos de Airbnb para la ciudad de Madrid. Se ha utilizado el lenguaje de programación R y se han realizado diversos análisis y visualizaciones utilizando un archivo Quarto (`.qmd`), con versiones en HTML para una fácil visualización.
 
-Ejercicios Realizados
----------------------
+Estructura del Repositorio
+--------------------------
 
-1.  **Conversión de Unidades**: Creación de una nueva columna `MetrosCuadrados` a partir de la columna `PiesCuadrados`.
-2.  **Limpieza de Códigos Postales**: Corrección y estandarización de los datos de la columna `Codigo Postal`.
-3.  **Análisis de Códigos Postales**: Identificación de los códigos postales presentes en el conjunto de datos.
-4.  **Análisis de Frecuencia de Códigos Postales**: Determinación de los códigos postales con más y menos entradas.
-5.  **Barrios en Código Postal 28012**: Identificación de barrios en el código postal específico 28012.
-6.  **Frecuencia de Entradas por Barrio en 28012**: Recuento de entradas para cada barrio en el código postal 28012.
-7.  **Recuento de Barrios**: Total de barrios en el dataset y sus nombres.
-8.  **Barrios con Mayor Número de Entradas**: Identificación de los 5 barrios con más entradas.
-9.  **Tipos de Alquiler**: Análisis de los diferentes tipos de alquiler, sus nombres y frecuencias.
-10.  **Análisis Estadístico de Precios**: Cálculo del precio medio de alquiler por tipo y análisis de significancia estadística.
-11.  **Filtrado de Tipo de Alquiler**: Creación de un dataframe `airbnb_entire` para alquileres de "Entire home/apt".
-12.  **Top Barrios por Apartamentos Completos**: Análisis de los barrios con más apartamentos enteros.
-13.  **Precio Medio por Barrio en Apartamentos Completos**: Cálculo del precio medio y su distribución por barrio.
-14.  **Distribución de Apartamentos por Barrio**: Análisis de la cantidad de apartamentos por barrio.
-15.  **Barrios con Mayor Precio y Suficientes Entradas**: Identificación de barrios con alto precio medio y más de 100 entradas.
-16.  **Distribución de Precios por Barrio**: Visualización de la distribución de precios para los barrios seleccionados.
-17.  **Tamaño Medio de Apartamentos**: Cálculo del tamaño medio de apartamentos en los barrios seleccionados.
-18.  **Distribución de Tamaños de Apartamentos**: Visualización de la distribución de tamaños de apartamentos.
-19.  **Análisis Estadístico de Tamaños de Apartamentos**: Prueba estadística para diferencias en el tamaño medio entre barrios. 20-25. **Modelo Lineal en Barrio Sol**: Análisis detallado del barrio Sol, incluyendo correlación entre variables, filtrado de datos, modelo lineal para estimar precios y análisis de probabilidades.
+El repositorio está organizado de la siguiente manera:
 
-Trabajando con Archivos `.qmd`
-------------------------------
+*   **Carpeta `data`**: Contiene el conjunto de datos utilizado en el análisis, `airbnb.csv`. Este archivo incluye los datos de listados de Airbnb para Madrid y es esencial para reproducir los análisis presentados.
+    
+*   **Carpeta `img`**: Alberga imágenes de algunos de los gráficos generados durante la práctica. Estas imágenes representan visualizaciones clave derivadas del análisis de datos y son útiles para una rápida referencia visual.
+    
+*   **Archivo `AirbnbAnalysis.qmd`**: El documento principal de Quarto que contiene todo el código, análisis y visualizaciones realizados en este proyecto.
+    
+*   **Archivo `AirbnbAnalysis.html`**: Una versión HTML del archivo `.qmd` para facilitar la visualización del análisis sin necesidad de ejecutar el código en R. Ideal para aquellos que prefieren una vista rápida del proyecto o no tienen el entorno necesario para ejecutar archivos Quarto.
+    
 
-Los archivos Quarto (`.qmd`) son utilizados para la creación de documentos reproducibles en R. Para trabajar con estos archivos, sigue estos pasos:
+Visualización y Uso del Proyecto
+--------------------------------
 
-1.  **Instalación de Quarto**: Asegúrate de tener [Quarto](https://quarto.org/) instalado en tu sistema.
-2.  **Abrir el Archivo `.qmd`**: Puedes abrir archivos `.qmd` en un editor de texto o en un IDE compatible como RStudio.
-3.  **Ejecutar el Código**: En RStudio, puedes ejecutar el código en el archivo `.qmd` de manera interactiva. Esto te permitirá ver los resultados del análisis paso a paso.
-4.  **Generar Reportes**: Quarto te permite convertir tu `.qmd` en varios formatos como HTML, PDF o Word, facilitando la compartición y presentación de tus análisis.
+Para visualizar y utilizar este proyecto:
 
-Para más detalles sobre cómo trabajar con archivos `.qmd`, consulta la [documentación oficial de Quarto](https://quarto.org/docs/get-started/).
+1.  **Clonar o Descargar el Repositorio**: Puedes clonar este repositorio o descargarlo como un archivo ZIP para acceder a todos los archivos.
+    
+2.  **Abrir el Archivo `.qmd`**: Si tienes Quarto y R configurados, puedes abrir y ejecutar `AirbnbAnalysis.qmd` para una vista detallada y reproducible del análisis.
+    
+3.  **Visualizar el HTML**: Para una rápida revisión, abre `AirbnbAnalysis.html` en un navegador web.
+    
+4.  **Explorar los Datos y las Imágenes**: La carpeta `data` contiene los datos utilizados en el análisis, mientras que la carpeta `img` ofrece una representación gráfica de los resultados clave.
+
+Este repositorio está diseñado para ser accesible y fácil de utilizar. 
+
+Resumen de los Ejercicios
+-------------------------
+
+Este proyecto incluye una serie de ejercicios enfocados en el análisis de datos de Airbnb en Madrid, utilizando R:
+
+1.  **Conversión de Unidades**: Creación de una columna `MetrosCuadrados` a partir de `PiesCuadrados`.
+2.  **Limpieza de Códigos Postales**: Corrección de entradas erróneas y estandarización de los códigos postales.
+3.  **Identificación de Códigos Postales**: Análisis de los códigos postales presentes en el dataset.
+4.  **Frecuencia de Códigos Postales**: Determinación de los códigos postales más y menos frecuentes.
+5.  **Análisis de Barrios por Código Postal**: Identificación y recuento de barrios en el código postal 28012.
+6.  **Recuento de Entradas por Barrio**: Análisis de la distribución de entradas en cada barrio del código postal 28012.
+7.  **Total de Barrios en el Dataset**: Recuento y listado de todos los barrios en el conjunto de datos.
+8.  **Barrios con Mayor Número de Entradas**: Identificación de los cinco barrios más populares.
+9.  **Análisis de Tipos de Alquiler**: Exploración de los diferentes tipos de alquiler, sus frecuencias y distribución de precios.
+10.  **Análisis Estadístico de Precios**: Estudio de la significancia estadística en las diferencias de precios medios por tipo de alquiler.
+11.  **Filtrado por Tipo de Alquiler**: Creación de un dataframe específico para alquileres de "Entire home/apt".
+12.  **Top Barrios por Apartamentos Completos**: Análisis de los barrios con más apartamentos enteros en alquiler.
+13.  **Precio Medio en Barrios Seleccionados**: Cálculo y comparación del precio medio de alquiler en barrios seleccionados.
+14-25. **Análisis Detallado del Barrio Sol**: Estudio profundo del barrio Sol, incluyendo correlaciones, filtrado de datos, modelo lineal para estimar precios y análisis probabilísticos.
+
+Estos ejercicios proporcionan una visión integral del mercado de alquileres de Airbnb en Madrid, utilizando métodos estadísticos y de visualización de datos para extraer insights valiosos.
